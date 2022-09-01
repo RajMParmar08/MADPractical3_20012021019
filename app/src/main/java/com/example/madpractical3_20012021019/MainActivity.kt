@@ -1,5 +1,6 @@
 package com.example.madpractical3_20012021019
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.madpractical3_20012021019.databinding.ActivityMainBinding
@@ -12,5 +13,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
+        Intent(this, LoginActivity::class.java).also {startActivity(it)}
     }
 }
